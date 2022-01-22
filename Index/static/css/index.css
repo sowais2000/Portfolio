@@ -1,0 +1,1804 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+/* Content Title (Montserrat) */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+/* Montserrat Subrayada */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap");
+/* Lato */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+/* Raleway */
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+/* Prompt */
+
+@import url("https://fonts.googleapis.com/css2?family=Prompt&display=swap");
+/* Poppins */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/* font-family: 'Poppins', sans-serif; */
+
+/* font-family: 'Gowun Dodum', sans-serif; */
+
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap");
+:root {
+    --primary-color: #890880;
+    --primaryLessopacity-color: #5884be7c;
+    --primary-veryLessopacity-color: #5884be50;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    /* cursor: none; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    position: relative;
+    height: 485vh;
+    width: 100%;
+    min-width: 100%;
+}
+
+/* Hamburger */
+
+.hamburger {
+    position: fixed;
+    right: 7%;
+    z-index: 99;
+    bottom: 3%;
+    visibility: hidden;
+    transition: 2s ease-in-out;
+}
+
+.hamburger img {
+    height: 20px;
+    width: auto;
+}
+
+/* Mobile Navbar */
+
+.mobilenavbar {
+    position: fixed;
+    height: 100vh;
+    width: 0px;
+    right: 0;
+    top: 0;
+    background-color: whitesmoke;
+    z-index: 998;
+    transition: 500ms ease;
+    overflow: hidden;
+}
+
+.mobilenavbar .mobileNavbarContainer {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 300ms ease;
+}
+
+.mobileNavbarContainer .title {
+    width: 100%;
+    padding: 20px 0px;
+}
+
+.mobileNavbarContents {
+    width: 100%;
+}
+
+/* Mobile Navbar cross */
+
+.cross {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 10%;
+}
+
+/* .mobilenavbar .cross .goBackNavbar {
+    height: 25px;
+    width: auto;
+    position: relative;
+    left: 55%;
+    top: 100%;
+} */
+
+.mobileNavbarContainer .mobileInNavbarContents {
+    transition: 300ms ease;
+    position: relative;
+    left: 25%;
+    top: 18%;
+}
+
+.mobileNavbarContainer .title p {
+    font-family: "Poppins";
+    color: var(--primary-color);
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+.mobilenavbar .mobileNavbarContents ul {
+    list-style-type: none;
+}
+
+.mobilenavbar .mobileNavbarContents ul li {
+    padding: 2px 0px;
+}
+
+.mobilenavbar .mobileNavbarContents ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+}
+
+header.navbarheader {
+    height: 66px;
+    width: 100%;
+    /* background-color: whitesmoke; */
+    background-color: rgba(245, 245, 245, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+header.navbarheader>nav.navbar {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navtitlecolorhover {
+    color: black;
+}
+
+.navbarheader .navbar .navtitle {
+    font-family: "Poppins";
+    width: 40%;
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    z-index: 3;
+    cursor: default;
+}
+
+.navbarheader .navbar .navtitle a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.navbarheader .navbar .navtitle .navtitlepara {
+    padding: 1rem;
+    z-index: 4;
+    text-decoration: none;
+}
+
+header.navbarheader>nav.navbar>ul.navul {
+    list-style-type: none;
+    font-family: "Inconsolata", monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+header.navbarheader>nav.navbar>ul.navul>li.navli {
+    /* padding: 10px 20px; */
+    text-decoration: none;
+}
+
+a.an {
+    text-decoration: none;
+    color: black;
+    transition: 500ms;
+    padding: 25px 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    /* font-weight: 500; */
+}
+
+a.an:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Container */
+
+div.container {
+    /* height: 200vh; */
+    width: 100%;
+    background-color: whitesmoke;
+    position: relative;
+    z-index: 1;
+    /* overflow: hidden; */
+}
+
+.container .wavediv {
+    box-sizing: border-box;
+    width: 100%;
+    z-index: -1;
+    position: relative;
+}
+
+.container>.wavediv>img {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+    box-sizing: border-box;
+}
+
+.container .wavediv .wave {
+    z-index: -2;
+}
+
+.container .wavediv .wave2 {
+    z-index: -3;
+}
+
+.container>.firstcontent {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.firstcontent .shapes {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    overflow-y: visible;
+}
+
+.shapes #triangler {
+    position: relative;
+    left: -100px;
+    top: 20%;
+    height: 400px;
+    width: auto;
+    animation: wheel 30s linear infinite;
+}
+
+.shapes #rectangler {
+    position: relative;
+    left: 200px;
+    top: 80%;
+    height: 300px;
+    width: auto;
+    animation: wheelAntiClockWise 100s linear reverse infinite;
+    visibility: hidden;
+}
+
+@keyframes wheel {
+    0% {
+        transform: skew(0deg) scale(1) rotate(0deg);
+    }
+    50% {
+        transform: skew(20deg) scale(1.3) rotate(180deg);
+    }
+    100% {
+        transform: skew(0deg) scale(1) rotate(360deg);
+    }
+}
+
+@keyframes wheelAntiClockWise {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.firstcontent .content {
+    position: relative;
+    left: 10%;
+    top: 15%;
+}
+
+.container>.firstcontent>#contenttitle {
+    font-family: "Poppins";
+    font-size: 100px;
+    cursor: default;
+    display: inline;
+    width: max-content;
+    position: relative;
+    left: 10%;
+    top: 15%;
+}
+
+.container>.firstcontent>#contenttitle>#hel {
+    font-size: 50px;
+    height: fit-content;
+    width: fit-content;
+    /* margin-bottom:20px; */
+}
+
+span#lo {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px;
+}
+
+.container>.firstcontent>#contenttitle>#lo::after {
+    content: "wais";
+    right: -20px;
+    position: relative;
+    opacity: 0;
+    transition: all 500ms;
+}
+
+.container>.firstcontent>#contenttitle:hover>#lo:after {
+    opacity: 1;
+    right: 0px;
+}
+
+.container .firstcontent #contentheader p {
+    font-family: "Poppins";
+    font-size: 40px;
+}
+
+.container>.firstcontent>#contentdescription {
+    height: auto;
+    width: 600px;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    margin-top: 1%;
+    /* font-style: italic; */
+}
+
+.container .firstcontent .workwithme {
+    position: relative;
+    margin: 10px 0px;
+    text-align: start;
+    cursor: default;
+    width: fit-content;
+    height: auto;
+}
+
+.container .firstcontent .workwithme a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.5em;
+    font-family: "Lato", sans-serif;
+    font-weight: thin;
+    /* text-decoration: underline; */
+    font-style: italic;
+    transition: all 500ms ease;
+    /* transform-style: preserve-3d; */
+}
+
+.container .firstcontent .workwithme:hover {
+    text-shadow: 5px 5px 10px rgb(172, 172, 172);
+}
+
+.contactme {
+    height: auto;
+    width: auto;
+    position: fixed;
+    bottom: 1%;
+    left: 2%;
+    z-index: 2;
+}
+
+.contactmeicon {
+    height: 60px;
+    width: auto;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    transition: all 300ms ease-out;
+}
+
+.contactmeicon .messenger {
+    height: 30px;
+    width: auto;
+    margin: 5px 10px;
+}
+
+.contactmeicon .contactmeiconimage {
+    height: 30px;
+    width: auto;
+    transition: 500ms ease-in-out;
+    opacity: 0;
+    margin: 5px 10px;
+}
+
+.contactmeicon::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-right: 5px solid var(--primary-color);
+    z-index: -1;
+    border-radius: 5%;
+    transition: 500ms ease-in-out;
+    transform: scaleY(0);
+    transform-origin: center;
+}
+
+.contactmeicon:hover::after {
+    transform: scaleY(1);
+}
+
+.contactmeicon:hover .contactmeiconimage {
+    opacity: 1;
+    /* transform: scale(1.1); */
+}
+
+.contactmeicon:hover {
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 3px gray;
+    /*transform: scale(1.1);*/
+}
+
+.contactmeicon img {
+    height: 30px;
+    width: 30px;
+    box-sizing: border-box;
+}
+
+/* Skills */
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    height: auto;
+    width: 100%;
+    /* border-bottom-right-radius: 20px; */
+}
+
+.skills .skilltitle {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-top-left-radius: 40px;
+    background-color: var(--primary-color);
+    cursor: default;
+    justify-content: center;
+}
+
+.skilltitle p {
+    font-family: "Poppins", sans-serif;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 5px;
+    font-size: 450px;
+    /* text-transform: uppercase; */
+    color: whitesmoke;
+    position: relative;
+    z-index: 2;
+}
+
+/* Skill boxes */
+
+.boxcontainer {
+    height: auto;
+    background-color: var(--primary-color);
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.boxcontainer .boxes {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin: 20px 0px;
+    position: relative;
+}
+
+.boxcontainer .boxes .box {
+    height: 250px;
+    width: 410px;
+    /* background-color: black; */
+    overflow: hidden;
+    position: relative;
+}
+
+.boxes .box .image {
+    transition: 500ms linear;
+    position: relative;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    transition: 500ms all ease-in;
+}
+
+.boxcontainer .boxes .box .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 500ms all ease-in;
+    z-index: 3;
+    position: relative;
+}
+
+.boxes .box .boxcontents {
+    position: absolute;
+    top: 0;
+    right: -70%;
+    height: 100%;
+    width: 70%;
+    background-color: #ffffff;
+    z-index: 4;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    transition: 400ms ease-in;
+}
+
+.boxes .box:hover .boxcontents {
+    right: 0;
+}
+
+.boxes .box:hover .image img {
+    transform: scale(1.3);
+}
+
+.boxes .box .boxcontents .boxtitle {
+    font-size: 30px;
+    font-family: "Raleway", Courier, monospace;
+    letter-spacing: 3px;
+    color: var(--primary-color);
+    position: relative;
+    margin-top: 10px;
+    /* padding:5px; */
+}
+
+.boxes .box .boxcontents .boxdescription {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+    height: 65%;
+    font-family: "Poppins", sans-serif;
+    color: rgb(41, 41, 41);
+}
+
+.boxes .box .bar {
+    width: 100%;
+    height: 5px;
+    /* background-color: black; */
+    border: 0.01px solid var(--primary-color);
+    border-radius: 20px;
+    position: relative;
+    bottom: 0;
+    margin-bottom: 0px;
+}
+
+.boxes2 {
+    padding-bottom: 5%;
+}
+
+.boxes .box .bar .innerbar {
+    height: 100%;
+    /* width: 89%; */
+    background-color: var(--primary-color);
+}
+
+.boxes .box .bar .htmlbar {
+    width: 70%;
+}
+
+.boxes .box .bar .jsbar {
+    width: 60%;
+}
+
+.boxes .box .bar .pythonbar {
+    width: 90%;
+}
+
+.boxes .box .bar .JQuerybar {
+    width: 20%;
+}
+
+.boxes .box .bar .SQLbar {
+    width: 50%;
+}
+
+.boxes .box .bar .djangobar {
+    width: 80%;
+}
+
+.boxes .box .percentage {
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
+    color: var(--primary-color);
+}
+
+/* Blur */
+
+.blur {
+    height: 250px;
+    position: absolute;
+    width: 120%;
+    margin-left: -10%;
+}
+
+.blur .blury {
+    top: -50px;
+    height: 120px;
+    width: 120%;
+    filter: blur(20px);
+    position: absolute;
+    background-color: var(--primary-color);
+}
+
+/* Microsoft */
+
+.microsoft {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: space-around;
+    position: relative;
+    overflow: hidden;
+}
+
+.microsoft .microsoftimage {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    top: 100px;
+}
+
+.microsoft .microsoftimage img {
+    height: auto;
+    width: 700px;
+}
+
+.downloadmicrosoft button a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.microsoft .microsoftcontent .downloadmicrosoft button {
+    width: 100%;
+    height: 100px;
+    font-size: 20px;
+    font-family: "Lato", sans-serif;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    margin-top: 20px;
+    transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: 1;
+    position: relative;
+}
+
+.microsoft .microsoftcontent .downloadmicrosoft button:hover {
+    background-color: black;
+}
+
+.microsoft .microsoftcontent {
+    width: 500px;
+    position: relative;
+    top: 25%;
+}
+
+.microsoft .microsoftcontent .microsofttitle {
+    font-size: 50px;
+    font-family: "Montserrat", sans-serif;
+    color: black;
+}
+
+.microsoft .and {
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    color: black;
+}
+
+.microsoft .microsoftcontent .anothertitle {
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    color: black;
+}
+
+.microsoft .microsoftcontent .microsoftinnercontent {
+    position: relative;
+    margin-top: 50px;
+}
+
+.microsoft .microsoftinnercontent ul li {
+    margin: 20px 0px;
+    font-size: 15px;
+    font-family: "Raleway", sans-serif;
+    list-style-type: none;
+}
+
+.microsoft .back {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    cursor: default;
+}
+
+.microsoft .back .backtext {
+    font-size: 600px;
+    text-transform: uppercase;
+    color: var(--primary-veryLessopacity-color);
+    font-family: "Raleway", sans-serif;
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Resume */
+
+.resume {
+    margin-top: 50px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+}
+
+.resumeback {
+    position: absolute;
+    width: 100%;
+    font-size: 500px;
+    overflow: hidden;
+    z-index: -5;
+    color: rgba(0, 0, 0, 0.445);
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 5px;
+}
+
+.resume .resumeleft {
+    height: 100%;
+    width: 50%;
+    background-color: var(--primary-color);
+    z-index: 1;
+}
+
+.resume .resumeleft .resumename {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 70%;
+    position: relative;
+    text-align: left;
+    left: 10%;
+    top: 20%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.resume .resumeleft .resumename .rname {
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: whitesmoke;
+    transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    padding: 10px;
+    font-size: 60px;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.resume .resumeleft .resumename .resumewritten {
+    padding: 10px;
+    font-size: 30px;
+    color: black;
+    background-color: white;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 3px;
+}
+
+.resume .resumeleft .resumename .resumeSocialMedia {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    background-color: rgb(221, 221, 221);
+    /* margin-top: 20px; */
+    transition: 500ms ease-out;
+}
+
+.resume .resumeleft .resumename .resumeSocialMedia a {
+    height: 30px;
+    width: auto;
+    padding: 10px 20px;
+}
+
+.resume .resumeleft .resumename .resumeSocialMedia a img {
+    height: 30px;
+    width: auto;
+}
+
+/* Resume Hovering */
+
+.resume .resumeleft .resumename:hover .rname {
+    background-color: white;
+    color: black;
+}
+
+.resume .resumeleft .resumename:hover .resumeSocialMedia {
+    background-color: black;
+}
+
+/* .resume .resumeleft .resumename:hover .resumewritten{
+    background-color: black;
+    color:white;
+
+} */
+
+.resume .resumeleft .myphoto {
+    position: absolute;
+    left: 30%;
+    top: 10%;
+    height: 500px;
+    width: 300px;
+    overflow: hidden;
+}
+
+.resume .resumeright {
+    height: 100%;
+    width: 50%;
+}
+
+.btnresume {
+    height: 75px;
+    width: 250px;
+    position: sticky;
+    top: 50%;
+    float: right;
+    border: none;
+    font-size: 17px;
+    background-color: black;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    z-index: 1;
+    cursor: pointer;
+    transition: 500ms ease-out;
+}
+
+.btnresume::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--primary-color);
+    z-index: -1;
+    transform: scaleX(0);
+    transition: 500ms ease-out;
+    transform-origin: left;
+}
+
+.resumeright .btnresume a {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.resumeright .btnresume:hover::before {
+    transform: scaleX(1);
+}
+
+/* .resumeleft .myphoto img{
+    height:500px;
+    width:300px;
+    object-fit: cover;
+
+} */
+
+/* Parallax effect */
+
+.parallax {
+    min-height: 400px;
+}
+
+.backtotop {
+    position: absolute;
+    height: 50px;
+    width: auto;
+    right: 2%;
+    bottom: 10%;
+    z-index: 999;
+}
+
+.backtotop:hover {
+    animation: upAndDown 1s ease-in-out infinite;
+}
+
+@keyframes upAndDown {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* CopyRight */
+
+.copyright {
+    position: absolute;
+    position: -webkit-sticky;
+    bottom: 0;
+    background-color: var(--primary-color);
+    color: rgb(201, 201, 201);
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    transition: 1s ease-in;
+    cursor: default;
+    z-index: 2;
+}
+
+.copyright span {
+    font-size: 20px;
+    font-family: "Lato", sans-serif;
+    position: relative;
+    cursor: default;
+    margin: 0px 3px;
+    transition: 100ms ease-in-out;
+}
+
+.copyright span.big:hover {
+    color: white;
+    font-size: 50px;
+}
+
+.contact {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--primary-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.contact .contactTitle {
+    height: 20vh;
+    width: 50%;
+}
+
+.contact .contactcontainer {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact .contactcontainer .talk {
+    height: 100%;
+    width: 50%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.talk .talktitle {
+    font-size: 50px;
+    font-family: "Montserrat";
+    cursor: default;
+}
+
+.talk .talkdesc {
+    font-size: 17px;
+    font-family: "Lato";
+    cursor: default;
+}
+
+.talk form {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    margin: 30px 0px;
+    width: 90%;
+    z-index: 99;
+    position: relative;
+}
+
+.talk form input,
+textarea {
+    background-color: transparent;
+    border: none;
+    color: white;
+    border-bottom: 1px solid white;
+    padding: 30px 0px;
+    outline: none;
+    font-family: "Poppins";
+    font-size: 13px;
+}
+
+.talk form textarea {
+    height: 100px;
+    max-width: 100%;
+}
+
+.talk form button#contactEmailSubmit {
+    margin-top: 40px;
+    padding: 5px;
+    cursor: default;
+    width: 100px;
+    position: relative;
+    border: none;
+    font-size: 17px;
+    float: right;
+    background-color: white;
+    font-family: "Poppins", sans-serif;
+    z-index: 1;
+    color: black;
+    cursor: default;
+    transition: 500ms ease-out;
+}
+
+.talk form button#contactEmailSubmit::before {
+    content: "";
+    position: absolute;
+    background-color: var(--primary-color);
+    z-index: -1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.talk form button#contactEmailSubmit:hover::before {
+    transform: scaleX(1);
+    /* color:white; */
+}
+
+/* .talk form button#contactEmailSubmit:hover a{
+    color:white
+
+} */
+
+.talk form button#contactEmailSubmit:hover {
+    color: white;
+    text-decoration: none;
+    cursor: default;
+    transition: 500ms ease-in-out;
+}
+
+.contact .contactcontainer .map {
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+
+.bottomcontact {
+    position: relative;
+}
+
+/* Contact Form error */
+
+.contacterror {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: rgb(216, 41, 41);
+    font-family: "Poppins";
+}
+
+.googlemap {
+    -webkit-filter: grayscale(100%);
+    filter: drop-shadow(16px 16px 20px black) invert(75%);
+    filter: invert(94%);
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.googlemap .mapcontent {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    z-index: 5;
+}
+
+/* #################### MEDIA QUERY ################ */
+
+/* ---------------- < 1300 media query------------ */
+
+@media (max-width: 1300px) {
+    /*ContactMe icon border animation*/
+    .contactmeicon::after {
+        display: none;
+    }
+    /* Skills */
+    .skilltitle p {
+        font-size: 400px;
+    }
+    /* Microsoft Certification */
+    /* Image */
+    .microsoft .microsoftimage img {
+        width: 600px;
+    }
+    .microsoft .microsoftcontent {
+        width: fit-content;
+    }
+    .microsoft .microsoftcontent .microsofttitle {
+        font-size: 40px;
+    }
+    .microsoft .microsoftcontent .anothertitle {
+        font-size: 18px;
+    }
+}
+
+/* ---------------- < 1200 media query------------ */
+
+@media (max-width: 1200px) {
+    /* Skills */
+    .skilltitle p {
+        font-size: 350px;
+    }
+    .boxcontainer .boxes .box {
+        height: 230px;
+        width: 350px;
+    }
+    /* Skills */
+    .boxes .box .boxcontents .boxtitle {
+        font-size: 25px;
+    }
+    .boxes .box .boxcontents .boxdescription {
+        font-size: 12px;
+    }
+}
+
+/* ---------------- < 1100 media query------------ */
+
+@media (max-width: 1100px) {
+    /* Triangler */
+    .shapes #triangler {
+        height: 400px;
+    }
+    /* Skills */
+    .boxes .box .boxcontents .boxtitle {
+        font-size: 20px;
+    }
+    .boxes .box .boxcontents {
+        padding: 10px 10px;
+    }
+    /* Resume */
+    .resume .resumeleft .resumename .rname {
+        font-size: 45px;
+        letter-spacing: 0px;
+    }
+    .resume .resumeleft .resumename .resumewritten {
+        font-size: 23px;
+        letter-spacing: 0px;
+    }
+    .resume .resumeleft .resumename .resumeSocialMedia a {
+        padding: 10px 8px;
+    }
+    /* Microsoft */
+    .microsoft .microsoftimage img {
+        width: 500px;
+    }
+    .microsoft {
+        justify-content: space-evenly;
+    }
+    .microsoft .microsoftcontent {
+        left: 2%;
+        position: relative;
+    }
+    .microsoft .microsoftcontent .microsofttitle {
+        font-size: 30px;
+    }
+    .microsoft .microsoftcontent .anothertitle {
+        font-size: 15px;
+    }
+}
+
+/* ---------------- < 1000 media query------------ */
+
+@media (max-width: 1000px) {
+    /*Contact me icon*/
+    .contactmeicon:hover {
+        background-color: transparent;
+        box-shadow: none;
+        /*transform: scale(1.1);*/
+    }
+    /* Skills */
+    a.an {
+        padding: 25px 15px;
+    }
+    .skilltitle p {
+        font-size: 300px;
+    }
+    .boxcontainer .boxes .box {
+        height: 180px;
+        width: 250px;
+    }
+    .boxes .box .boxcontents {
+        width: 100%;
+        right: -100%;
+        padding: 10px 15px;
+    }
+    .boxes .box .boxcontents .boxtitle {
+        font-size: 20px;
+    }
+    .boxes .box .boxcontents .boxdescription {
+        font-size: 12px;
+    }
+}
+
+/* ---------------- < 800 media query------------ */
+
+@media (max-width: 800px) {
+    /* Hide Navbar */
+    .navbarheader {
+        display: none;
+    }
+    /* Show Hamburger */
+    .hamburger {
+        visibility: visible;
+    }
+    .mobilenavbar {
+        width: 0px;
+    }
+    /* Triangler */
+    .shapes #triangler {
+        height: 300px;
+        top: 0%;
+    }
+    .container .firstcontent .workwithme a {
+        color: black;
+    }
+    /* Rectangler */
+    .shapes #rectangler {
+        visibility: visible;
+        left: 200px;
+        top: 70%;
+    }
+    /* First Element */
+    .container {
+        width: 100%;
+    }
+    /* .container .wavediv .wave {
+        display: none;
+    } */
+    /* First Content */
+    .firstcontent .content {
+        position: relative;
+        top: 15%;
+    }
+    .container>.firstcontent>#contenttitle {
+        font-size: 80px;
+        top: 15%;
+    }
+    .container .firstcontent #contentheader p {
+        font-size: 35px;
+    }
+    .container>.firstcontent>#contentdescription {
+        font-size: 17px;
+        width: 520px;
+    }
+    .container .firstcontent .workwithme a {
+        font-size: 1.2em;
+    }
+    /* Skills */
+    .skilltitle p {
+        font-size: 250px;
+    }
+    .boxcontainer .boxes .box {
+        height: 150px;
+        width: 220px;
+    }
+    .boxes .box .boxcontents {
+        width: 100%;
+        right: -100%;
+        padding: 10px 15px;
+    }
+    .boxes .box .boxcontents .boxtitle {
+        font-size: 15px;
+    }
+    .boxes .box .bar {
+        display: none;
+    }
+    .boxes .box .boxcontents .boxdescription {
+        font-size: 10px;
+    }
+    /* Resume */
+    .resume .resumeleft .resumename .rname {
+        font-size: 35px;
+        letter-spacing: 0px;
+    }
+    .resume .resumeleft .resumename .resumewritten {
+        font-size: 18px;
+        letter-spacing: 0px;
+    }
+    .btnresume {
+        height: 50px;
+        width: 150px;
+    }
+    .resume .resumeleft .resumename .resumeSocialMedia a {
+        padding: 10px 5px;
+    }
+    /* Microsoft Content */
+    .microsoft {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .microsoft .microsoftcontent {
+        top: 5%;
+        flex-direction: column;
+        width: 100%;
+    }
+    .microsoft .downloadmicrosoft {
+        position: absolute;
+        top: 0;
+        right: 5%;
+    }
+    .microsoft .microsoftcontent .downloadmicrosoft button {
+        width: 250px;
+    }
+    .microsoft .microsoftimage {
+        top: 50px;
+    }
+    .microsoft .microsoftcontent .microsofttitle {
+        font-size: 35px;
+    }
+    .microsoft .microsoftcontent .anothertitle {
+        font-size: 18px;
+    }
+}
+
+/* ---------------- < 700 media query------------ */
+
+@media (max-width: 700px) {
+    .backtotop {
+        display: none;
+    }
+    .firstcontent .content {
+        position: relative;
+        top: 25%;
+    }
+    /* Rectangler */
+    .shapes #rectangler {
+        visibility: visible;
+        left: 100px;
+        top: 70%;
+        height: 200px;
+    }
+    .container>.firstcontent>#contenttitle {
+        font-size: 60px;
+        top: 25%;
+    }
+    .container .firstcontent #contentheader p {
+        font-size: 30px;
+    }
+    .container>.firstcontent>#contentdescription {
+        font-size: 17px;
+        width: 350px;
+    }
+    .container .firstcontent .workwithme a {
+        font-size: 1.2em;
+    }
+    /* Skills */
+    .skilltitle p {
+        font-size: 220px;
+    }
+    .boxcontainer .boxes .box {
+        height: 130px;
+        width: 200px;
+    }
+    .boxes .box .boxcontents {
+        width: 100%;
+        right: -100%;
+        padding: 5px 5px;
+    }
+    .boxes .box .boxcontents .boxtitle {
+        font-size: 15px;
+    }
+    .boxes .box .boxcontents .boxdescription {
+        font-size: 10px;
+    }
+    .boxes .box .percentage {
+        font-size: 10px;
+    }
+    /* Resume */
+    .resume .resumeleft .myphoto {
+        width: 200px;
+    }
+    .resume .resumeleft .resumename .resumeSocialMedia a {
+        padding: 10px 3px;
+    }
+}
+
+/* ----------------< 600 media query------------ */
+
+@media (max-width: 600px) {
+    .firstcontent .content {
+        top: 30%;
+    }
+    .container>.firstcontent>#contenttitle {
+        top: 30%;
+    }
+    /* Rectangler */
+    .shapes #rectangler {
+        left: 100px;
+        top: 400px;
+        visibility: visible;
+    }
+    /* Skills */
+    .skilltitle p {
+        font-size: 190px;
+    }
+    .boxcontainer .boxes .box {
+        height: 250px;
+        width: 450px;
+    }
+    .boxes .box .boxcontents {
+        width: 100%;
+        right: -100%;
+        padding: 40px 30px;
+    }
+    .boxes .box .boxcontents .boxtitle {
+        font-size: 30px;
+    }
+    .boxes .box .boxcontents .boxdescription {
+        font-size: 15px;
+    }
+    .boxes .box .percentage {
+        font-size: 15px;
+    }
+    /* Resume */
+    .resume .resumeleft .myphoto {
+        width: 50%;
+        left: 0;
+        top: 0;
+        height: 50%;
+    }
+    .resume .resumeleft .resumename {
+        top: 60%;
+        width: 100%;
+        left: 0;
+        z-index: 5;
+    }
+    .resume .resumeleft .resumename .resumeSocialMedia a {
+        padding: 10px 3%;
+    }
+    /* Contact */
+    .contact .contactcontainer {
+        flex-direction: column;
+    }
+    .contact .contactcontainer .talk {
+        height: 100%;
+        width: 100%;
+        padding: 20px;
+    }
+    .contact .contactcontainer .map {
+        display: none;
+    }
+    /* Copyright on contact section */
+    .copyright span {
+        font-size: 15px;
+    }
+    .backtotop {
+        bottom: 15%;
+    }
+    .resume .resumeleft .resumename .rname {
+        font-size: 30px;
+        letter-spacing: 0px;
+    }
+    .resume .resumeleft .resumename .resumewritten {
+        font-size: 15px;
+        letter-spacing: 0px;
+    }
+    /* Microsoft */
+    .microsoft .microsoftcontent .downloadmicrosoft button {
+        width: 200px;
+        height: 70px;
+        font-size: 16px;
+    }
+    .microsoft .microsoftcontent .microsofttitle {
+        font-size: 30px;
+    }
+    .microsoft .microsoftcontent .anothertitle {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 575px) {
+    .skilltitle p {
+        font-size: 190px;
+    }
+    .boxcontainer .boxes .box {
+        height: 250px;
+        width: 400px;
+    }
+    .boxes .box .boxcontents {
+        width: 100%;
+        right: -100%;
+        padding: 40px 30px;
+    }
+    .boxes .box .boxcontents .boxtitle {
+        font-size: 30px;
+    }
+    .boxes .box .boxcontents .boxdescription {
+        font-size: 15px;
+    }
+    .boxes .box .percentage {
+        font-size: 15px;
+    }
+}
+
+/* ---------------- < 550 media query------------ */
+
+@media (max-width: 550px) {
+    /* Rectangler */
+    .shapes #rectangler {
+        left: 250px;
+        top: 150px;
+        visibility: visible;
+    }
+    .shapes #triangler {
+        top: -5%;
+        height: 200px;
+    }
+    /* Skills */
+    /* Skills */
+    .skilltitle p {
+        font-size: 180px;
+    }
+}
+
+@media (max-width: 525px) {
+    .boxcontainer .boxes .box {
+        height: 250px;
+        width: 350px;
+    }
+    .boxes .box .boxcontents {
+        width: 100%;
+        right: -100%;
+        padding: 40px 30px;
+    }
+    .boxes .box .boxcontents .boxtitle {
+        font-size: 30px;
+    }
+    .boxes .box .boxcontents .boxdescription {
+        font-size: 15px;
+    }
+    .boxes .box .percentage {
+        font-size: 15px;
+    }
+}
+
+/* ---------------- < 500 media query------------ */
+
+@media (max-width: 500px) {
+    /* Hamburger Size */
+    .hamburger img {
+        height: 20px;
+    }
+    .mobilenavbar .cross .goBackNavbar {
+        height: 20px;
+    }
+    .mobileNavbarContainer .mobileInNavbarContents {
+        top: 20%;
+    }
+    .mobilenavbar .mobileNavbarContents ul li a {
+        font-size: 18px;
+    }
+    .firstcontent .content {
+        top: 40%;
+    }
+    .container>.firstcontent>#contenttitle {
+        font-size: 60px;
+        top: 40%;
+    }
+    .container .firstcontent #contentheader p {
+        font-size: 25px;
+    }
+    .container>.firstcontent>#contentdescription {
+        font-size: 15px;
+        width: 280px;
+    }
+    .container .firstcontent .workwithme a {
+        font-size: 1.2em;
+        color: var(--primary-color);
+    }
+    /* Skills */
+    .skilltitle p {
+        font-size: 150px;
+        -webkit-text-stroke: 3px;
+    }
+    /* Microsoft */
+    .microsoft .downloadmicrosoft {
+        position: relative;
+        right: 0;
+    }
+    .microsoft .microsoftimage img {
+        width: 400px;
+    }
+    .microsoft .microsoftcontent {
+        text-align: center;
+    }
+    .microsoft .microsoftcontent .microsofttitle {
+        font-size: 40px;
+    }
+    .microsoft .microsoftcontent .downloadmicrosoft button {
+        margin-top: 0;
+    }
+    .microsoft .microsoftcontent {
+        left: 0;
+    }
+}
+
+@media (max-width: 465px) {
+    .skilltitle p {
+        font-size: 130px;
+        -webkit-text-stroke: 3px;
+    }
+    .boxcontainer .boxes .box {
+        height: 200px;
+        width: 300px;
+    }
+    .boxes .box .boxcontents {
+        width: 100%;
+        right: -100%;
+        padding: 10px 20px;
+    }
+    .boxes .box .boxcontents .boxtitle {
+        font-size: 20px;
+    }
+    .boxes .box .boxcontents .boxdescription {
+        font-size: 13px;
+    }
+    .boxes .box .percentage {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 415px) {
+    .boxcontainer .boxes .box {
+        height: 200px;
+        width: 250px;
+    }
+    .boxes .box .boxcontents {
+        width: 100%;
+        right: -100%;
+        padding: 10px 20px;
+    }
+    .boxes .box .boxcontents .boxtitle {
+        font-size: 20px;
+    }
+    .boxes .box .boxcontents .boxdescription {
+        font-size: 13px;
+    }
+    .boxes .box .percentage {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 375px) {
+    .skilltitle p {
+        font-size: 100px;
+        -webkit-text-stroke: 2.5px;
+    }
+    .boxcontainer .boxes .box {
+        height: 150px;
+        width: 220px;
+    }
+    .boxes .box .boxcontents {
+        width: 100%;
+        right: -100%;
+        padding: 5px 10px;
+    }
+    .boxes .box .boxcontents .boxtitle {
+        font-size: 15px;
+    }
+    .boxes .box .boxcontents .boxdescription {
+        font-size: 11px;
+    }
+    .boxes .box .percentage {
+        font-size: 10px;
+    }
+}
+
+/* ---------------- < 350 media query------------ */
+
+@media (max-width: 350px) {
+    /* Copyright */
+    .copyright span {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 335px) {
+    /* Skills */
+    .skilltitle p {
+        font-size: 100px;
+        -webkit-text-stroke: 2.5px;
+    }
+    .boxcontainer .boxes .box {
+        height: 150px;
+        width: 200px;
+    }
+    .boxes .box .boxcontents {
+        width: 100%;
+        right: -100%;
+        padding: 5px 10px;
+    }
+    .boxes .box .boxcontents .boxtitle {
+        font-size: 15px;
+    }
+    .boxes .box .boxcontents .boxdescription {
+        font-size: 11px;
+    }
+    .boxes .box .percentage {
+        font-size: 10px;
+    }
+    /* Microsoft */
+    .microsoft .microsoftcontent .microsofttitle {
+        font-size: 30px;
+    }
+    .microsoft .microsoftcontent .downloadmicrosoft button {
+        height: 75px;
+    }
+    .resume .resumeleft .resumename .resumeSocialMedia a img {
+        height: 25px;
+    }
+    .resume .resumeleft .resumename .resumeSocialMedia a {
+        padding: 1px 3%;
+    }
+}

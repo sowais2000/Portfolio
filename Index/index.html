@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1">
+    <meta name="author" content="SAYED MOHAMMED OWAIS">
+    <meta name="keywords" content="web developer,Frontend Developer,Backend Developer,Website Developer,Web Designer, Fullstack developer, Animations,Beautiful Websites,Js developer,Css Animator,Lovely websites,
+    SMOWAIS website,owais website, smo website,smo portfolio, owais portfolio,topmost web developer, best web developer,owais's portfolio,portfolio">
+    <meta name="description" content="Hello Individuals, I'm SAYED MOHAMMED OWAIS as a FULL-STACK Developer with a great Hands on Animations and Transitions which you needed for your Website. You can Contact me Anytime for Building your Websites and also for Managing it">
+    <link rel="icon" href="C:/Users/smsha/OneDrive/Desktop/My Website/Index/static/images/smo.png">
+    <!-- <link rel="icon" href="../"> -->
+    <link rel="stylesheet" href="C:/Users/smsha/OneDrive/Desktop/My Website/Index/static/css/index.css">
+
+
+
+    <!-- Owl carousel -->
+    <link rel="stylesheet" href="C:/Users/smsha/OneDrive/Desktop/My Website/Index/static/css/owl.carousel.min.css">
+
+
+
+    <title>S.M.OWAIS</title>
+    <script src="C:/Users/smsha/OneDrive/Desktop/My Website/Index/static/js/jquery-3.6.0.min.js"></script>
+
+    <!-- Jquery script -->
+    <script>
+        //Placeholder for Description
+        $(function() {
+            $('#contactEmailDescription').attr('placeholder', 'Description\nFeel Free to add your NAME for Better Communication')
+
+
+            //Link underline for "Get in touch with me"
+            if ($(window).width() < 800 && $(window).width() > 500) {
+                $('.getInTouch').html("<u>let's get into business -</u>")
+            } else {
+                $('.getInTouch').html("let's get into business -")
+            }
+
+            //Resume button text changer
+            if ($(window).width() < 800) {
+                $('.btnresume').html('<a href="/resume"></a>Resume')
+            } else {
+                $('.btnresume').html('<a href="/resume"></a>Checkout My Resume')
+            }
+
+            //Owl carousel
+            if ($(window).width() < 600) {
+                $(document).ready(function() {
+                    $(".boxes").owlCarousel({
+                        loop: false,
+                        margin: 10,
+                        smartSpeed: 500,
+                        dots: true,
+
+
+                        //autoplay:true,
+                        stagePadding: 60,
+                        responsive: {
+                            0: {
+                                items: 1
+                            },
+
+                            500: {
+                                items: 1
+                            },
+                            600: {
+                                items: 1
+                            }
+
+                        }
+                    });
+                });
+            }
+
+        })
+    </script>
+
+</head>
+
+<body>
+
+
+
+    <div class="contactme">
+        <div class="contactmeicon">
+
+            <a href='https://t.me/smowais2000' target="_blank"><img class='messenger'
+                    src="C:/Users/smsha/OneDrive/Desktop/My Website/Index/static/images/telegram.png" title='Telegram Me'></a>
+
+            <a href='https://wa.me/919820390001' target="_blank"><img class='contactmeiconimage'
+                    src="C:/Users/smsha/OneDrive/Desktop/My Website/Index/static/images/whatsappfillblack.png" title='Whatsapp Me'></a>
+
+            <a href='mailto:smowais2000@gmail.com' target="_blank">
+                <img class='contactmeiconimage emailcontactme' src="C:/Users/smsha/OneDrive/Desktop/My Website/Index/static/images/email.png" title='Mail Me'></a>
+
+        </div>
+    </div>
+
+    <div class="hamburger">
+        <img class='hamburgerImg' src="C:/Users/smsha/OneDrive/Desktop/My Website/Index/static/images/hamburgerBlack.svg" alt="">
+    </div>
+
+    <div class="mobilenavbar">
+        <div class="mobileNavbarContainer">
+            <div class="title mobileInNavbarContents">
+                <p>SMO</p>
+            </div>
+            <div class="mobileNavbarContents mobileInNavbarContents">
+                <ul>
+                    <li><a class='mobileNavbarE' href="#">Home</a></li>
+                    <li><a class='mobileNavbarE' href="#skills">Skills</a></li>
+                    <li><a class='mobileNavbarE' href="#resume">About</a></li>
+                    <li><a class='mobileNavbarE' href="C:/Users/smsha/OneDrive/Desktop/My Website/Resume/resume.html">Resume</a></li>
+                    <li><a class='mobileNavbarE' href="C:/Users/smsha/OneDrive/Desktop/My Website/Qualification/qualifications.html">Qualifications </a></li>
+                    <li><a class='mobileNavbarE' href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="cross mobileInNavbarContents">
+
+            </div>
+        </div>
+    </div>
+
+    <header class='navbarheader'>
+        <nav class='navbar'>
+            <div class="navtitle">
+                <a href="#">
+                    <p class='navtitlepara'>SMO</p>
+                </a>
+            </div>
+            <ul class='navul'>
+                <li class='navli'> <a class='an' href="#"> Home </a></li>
+                <li class='navli'><a class='an' href="#skills">Skills</a></li>
+                <li class='navli'><a class='an' href="#resume">About</a></li>
+                <li class='navli'><a class='an' href="C:/Users/smsha/OneDrive/Desktop/My Website/Resume/resume.html">Resume</a></li>
+                <li class='navli'><a class='an' href="C:/Users/smsha/OneDrive/Desktop/My Website/Qualification/qualifications.html">Qualifications</a></li>
+                <li class='navli'><a class='an' href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <div class="container" id='home'>
+        <div class="wavediv">
+            <img class='wave' id='bluewave' src="C:/Users/smsha/OneDrive/Desktop/My Website/Index/static/images/purple3.jpg" style="z-index: 2;">
+            <!-- <img class='wave2' src="C:/Users/smsha/OneDrive/Desktop/H,C,J/images/opablueback1.svg" alt="" style="z-index: 1;"> -->
+
+        </div>
+        <!-- First content -->
+        <div class="firstcontent">
+            <div id='contenttitle'>
+                <span>Hell</span><span style="color:#000000;" id="lo">O</span>
+            </div>
+
+            <div class="content" id='contentheader'>
+                <p>Web Developer</p>
+            </div>
+            <div class="content" id='contentdescription'>
+                I'm an Enthusiastic FullStack Developer who gives life to your websites with those Beautiful Colors, Transitions, Animations & Responsiveness
+            </div>
+            <div class="content workwithme">
+                <a class='getInTouch' href="#contact"> let's Talk - </a>
+            </div>
+        </div>
+
+
+
+
+        <div class="skills" id="skills">
+
+            <div class="skilltitle">
+
+                <p id='skillp'>SKILLS</p>
+
+            </div>
+
+            <!-- Skill boxes -->
+            <div class="boxcontainer">
+
+                <div class="boxes1 boxes owl-carousel owl-theme">
+                    <div class="box box3 item skewElem">
+                        <div class="image">
+                            <img src="C:/Users/smsha/OneDrive/Desktop/My Website/Index/static/images/pythonposter.jpeg">
+                        </div>
+                        <div class="boxcontents">
+                            <div class="boxtitle">Python</div>
+                            <div class="boxdescription">Python is everyone's Favourite language, so do mine and I Mastered python very well which helped me to clear MICROSOFT certification </div>
+                            <div class="bar">
+                                <div class="innerbar pythonbar"></div>
+                            </div>
+                            <div class="percentage">Knowledge 90%</div>
+                        </div>
+
+                    </div>
+                    <div class="box box1 item skewElem">
+                        <div class="image">
+                            <img src="C:/Users/smsha/OneDrive/Desktop/My Website/Index/static/images/htmlcss.jpg">
+                        </div>
+                        <div class="boxcontents">
+                            <div class="boxtitle">HTML & CSS</div>
+                            <div class="boxdescription">Desgining a Responsive Website is a Responsibility of Every Web Developer and I do it very well with all those Beautiful Animations and Transitions
+                            </div>
+
+                            <div class="bar">
+                                <div class="innerbar htmlbar"></div>
+                            </div>
+                            <div class="percentage">Knowledge 70%</div>
+                        </div>
+
+                    </div>
+                    <div class="box box2 item skewElem">
+                        <div class="image">
+                            <img src="C:/Users/smsha/OneDrive/Desktop/My Website/Index/static/images/jsimage.jpg">
+                        </div>
+                        <div class="boxcontents">
+                            <div class="boxtitle">JAVASCRIPT</div>
+                            <div class="boxdescription">JS helps your Website to make it more Interactive so I took a step further by learning Javascript Libraries and Jquery Framework too</div>
+                            <div class="bar">
+                                <div class="innerbar jsbar"></div>
+                            </div>
+                            <div class="percentage">Knowledge 60%</div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="boxes2 boxes owl-carousel owl-theme">
+                  <div class="box box2 item skewElem">
+                      <div class="image">
+                          <img src="C:/Users/smsha/OneDrive/Desktop/My Website/Index/static/images/SQL.svg">
+                      </div>
+                      <div class="boxcontents">
+                          <div class="boxtitle">SQL</div>
+                          <div class="boxdescription">SQL is a language to operate databases, it includes database creation, deletion, fetching rows, modifying rows, etc.</div>
+                          <div class="bar">
+                              <div class="innerbar SQLbar"></div>
+                          </div>
+                          <div class="percentage">Knowledge 50%</div>
+                      </div>
+                  </div>
+                    <div class="box box3 item skewElem">
+                        <div class="image">
+                            <img src="C:/Users/smsha/OneDrive/Desktop/My Website/Index/static/images/djangoposter.jpg">
+                        </div>
+                        <div class="boxcontents">
+                            <div class="boxtitle">Django</div>
+                            <div class="boxdescription">Django is the one of the best Framework and helps us to create Powerful Website rapidly, that's why i love Django Framework to use </div>
+                            <div class="bar">
+                                <div class="innerbar djangobar"></div>
+                            </div>
+                            <div class="percentage ">Knowledge 80%</div>
+                        </div>
+                    </div>
+
+
+                    <div class="box box1 item skewElem ">
+                        <div class="image">
+                            <img src="C:/Users/smsha/OneDrive/Desktop/My Website/Index/static/images/Jquery.png">
+                        </div>
+                        <div class="boxcontents">
+                            <div class="boxtitle">JQuery</div>
+                            <div class="boxdescription">jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code. </div>
+                            <div class="bar">
+                                <div class="innerbar JQuerybar"></div>
+                            </div>
+                            <div class="percentage">Knowledge 20%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Blur -->
+        <!-- <div class="blur"><div class="blury"></div></div> -->
+
+        <!-- microsoft certification for python -->
+        <div class="microsoft">
+            <div class="back">
+                <div class="back1 backtext">PYTHON</div>
+            </div>
+            <div class="microsoftcontent">
+                <div class="microsofttitle">Mastered Python</div>
+                <div class="and">&</div>
+                <div class="anothertitle">Certified by <span style="font-size: 25px;color:#6b97cf">Udemy</span>
+                </div>
+                <div class="microsoftinnercontent">
+                    <!-- Content comes here -->
+                </div>
+
+                <!-- Download Microsoft Certificate Button -->
+
+                <div class="downloadmicrosoft">
+                    <!-- <button> <a href="C:\Users\smsha\OneDrive\Desktop\My Website\Qualification\qualifications.html"></a>More Qualifications</button> -->
+                </div>
+            </div>
+            <div class="microsoftimage">
+                <img class='mimage' src="C:/Users/smsha/OneDrive/Desktop/My Website/Index/static/images/udemy.jpg" alt="microsoft">
+
+            </div>
+        </div>
+
+        <!-- Resume -->
+        <div class="resume" id="resume">
+            <div class="resumeback">
+                <p class='resumebackp'>ABOUT</p>
+            </div>
+            <div class="resumeleft">
+                <div class="resumename">
+                    <p class="resumefirstname rname">MOHAMMED OWAIS</p>
+                    <p class="resumelastname rname">SAYED</p>
+                    <p class="resumewritten rname">Web Developer</p>
+                    <p class="rname resumewritten resumeSocialMedia ">
+
+                        <a href="https://www.linkedin.com/in/mohammed-owais-sayed-52867720a/" target="_blank" title='Linkedin'>
+                            <img src="C:/Users/smsha/OneDrive/Desktop/My Website/Index/static/images/linkedin.png" alt="">
+                        </a>
+
+                        <a href="https://twitter.com/smowais2000" target="_blank" title='Twitter'>
+                            <img src="C:/Users/smsha/OneDrive/Desktop/My Website/Index/static/images/twitter.png" alt="">
+                        </a>
+
+                        <a href="https://www.instagram.com/__0wais__/" target="_blank" title='Instagram'>
+                            <img src="C:/Users/smsha/OneDrive/Desktop/My Website/Index/static/images/instagram.png" alt="">
+                        </a>
+                        <a href="https://www.facebook.com/sayedmohammed.owais" target="_blank" title='Facebook'>
+                            <img src="C:/Users/smsha/OneDrive/Desktop/My Website/Index/static/images/facebook_fill.png" alt="">
+                        </a>
+
+
+                    </p>
+                </div>
+
+                <div class="myphoto parallax" data-parallax="scroll" data-z-index="2" data-image-src="C:/Users/smsha/OneDrive/Desktop/My Website/Index/static/images/Myphoto1.jpeg" title='How you doin ?'>
+                </div>
+            </div>
+          </div>
+
+
+
+        <!-- contact -->
+        <div class="contact" id='contact'>
+
+            <div class="contactcontainer">
+                <div class="talk">
+                    <p class="talktitle">Let's Talk</p>
+                    <div class="talkdesc">
+                        <p>I will reply you ASAP </p>
+                    </div>
+
+                    <!-- Mail me -->
+                    <form action="/sendMail" method='POST' class="contactform">
+
+                        <input type="email" name="contactEmail" id="contactEmail" required placeholder="Your Email ID">
+
+                        <input type="number" name="phoneNumber" id="phoneNumber" placeholder="Mobile Number" required>
+
+                        <textarea name="contactEmailDescription" id="contactEmailDescription" cols="10" rows="70" required placeholder=""></textarea>
+
+                        <button id='contactEmailSubmit' type="submit">Send</button>
+
+
+                    </form>
+                </div>
+                <div class="map">
+
+                    <iframe class='googlemap' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8770.75539896664!2d73.02742859474792!3d19.17784212817061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x690ab1de9071942d!2sNeel%20Kamal%20Apartment!5e0!3m2!1sen!2sin!4v1640078051178!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+
+                    </iframe>
+                </div>
+
+            </div>
+
+
+            <!-- CopyRight -->
+            <div class="copyright">
+                <span class='big'>&copy;</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class='big'>C</span>
+                <span class="big">o</span>
+                <span class="big">p</span>
+                <span class="big">y</span>
+                <span class="big">r</span>
+                <span class="big">i</span>
+                <span class="big">g</span>
+                <span class="big">h</span>
+                <span class="big">t</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="big">b</span>
+                <span class="big">y</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="big"><b>S</b></span>
+                <span class="big"><b>M</b></span>
+                <span class="big"><b>O</b></span>
+                <span class="big"><b>w</b></span>
+                <span class="big"><b>a</b></span>
+                <span class="big"><b>i</b></span>
+                <span class="big"><b>s</b></span>
+
+
+
+
+            </div>
+
+            <div class="backtotop" id='backToTop'>
+
+                <img src="C:/Users/smsha/OneDrive/Desktop/My Website/Index/static/images/backToTop.svg" alt="" title='Back To Top'>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Gsap -->
+    <script src="C:/Users/smsha/OneDrive/Desktop/My Website/Index/static/js/gsap.min.js"></script>
+    <script src="C:/Users/smsha/OneDrive/Desktop/My Website/Index/static/js/ScrollTrigger.min.js"></script>
+    <script src="C:/Users/smsha/OneDrive/Desktop/My Website/Index/static/js/index.js"></script>
+
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js"-->
+    <!--    integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg=="-->
+    <!--    crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"-->
+    <!--    integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="-->
+    <!--    crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+
+    <script src="C:/Users/smsha/OneDrive/Desktop/My Website/Index/static/js/parallax.min.js"></script>
+
+    <!-- Hamburger js -->
+    <script src="C:/Users/smsha/OneDrive/Desktop/My Website/Index/static/js/hamburger.js"></script>
+    <!-- Owl Carousel -->
+    <script src="C:/Users/smsha/OneDrive/Desktop/My Website/Index/static/js/owl.carousel.js"></script>
+
+
+</body>
+
+</html>

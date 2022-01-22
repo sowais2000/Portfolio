@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1918.687" height="2022.476" viewBox="0 0 1918.687 2022.476">
+  <defs>
+    <clipPath id="clip-path">
+      <rect x="252" width="1918.687" height="2022.476" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="opablueback1" transform="translate(-252)" clip-path="url(#clip-path)" style="isolation: isolate">
+    <path id="opablueback" d="M3025.381,1591.1c-.863-336.5-469.959-46.41-688.156-61.1s-299.811,165.116-377.124,215.05S1775.578,1891.5,1649.59,1946.464s-253.13,10.49-379.747,140.569-302.119,339.884-302.119,339.884l-94.412,118.54V1831.072s-54.526-481.005,23.1-569.648,264.853,211.738,373.43,250.1,195.584,0,379.747-34.1S1848.33,1168.205,1960.1,1134.1s350.536-4.74,459.635-61.388S2528.87,797.606,2590.258,720.3s435.124-195.21,435.124-195.21Z" transform="translate(-854.195 -524.411)" fill="#6190ce" stroke="#707070" stroke-width="1" opacity="0.48"/>
+  </g>
+</svg>
